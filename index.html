@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  
+  <title>Product page</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="left_side_nav">
+      <div class="menu_btn">
+        <img src="assets/images/icon-menu.svg" alt="menu-btn">
+      </div>
+
+      <div class="logo">
+        <img src="assets/images/logo.svg" alt="logo">
+      </div>
+
+      <nav>
+        <ul class="navbar">
+          <li class="navbar_item">Collections</li>
+          <li class="navbar_item">Men</li>
+          <li class="navbar_item">Women</li>
+          <li class="navbar_item">About</li>
+          <li class="navbar_item">Contact</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right_side_nav">
+      <div class="cart">
+        <img class="cart_icon" src="assets/images/icon-cart.svg" alt="cart">
+      </div>
+
+      <div class="profile">
+        <img src="assets/images/image-avatar.png" alt="avatar">
+      </div>
+    </div>
+    <div class="backdrop"></div>
+  </header>
+
+  <main>
+    <section aria-label="slideshow" class="mobile_slideshow">
+      <div class="carousel" data-carousel>
+        <button class="prev_btn product_btn" data-carousel-button="prev">
+          <img src="assets/images/icon-previous.svg" alt="previous">
+        </button>
+        <button class="next_btn product_btn" data-carousel-button="next">
+          <img src="assets/images/icon-next.svg" alt="next">
+        </button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="assets/images/image-product-1.jpg"  alt="product" class="product_img">
+          </li>
+          <li class="slide">
+            <img src="assets/images/image-product-2.jpg"  alt="product" class="product_img">
+          </li>
+          <li class="slide">
+            <img src="assets/images/image-product-3.jpg"  alt="product" class="product_img">
+          </li>
+          <li class="slide">
+            <img src="assets/images/image-product-4.jpg" alt="product" class="product_img">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="desktop_gallery">
+      <div class="gallery">
+        <div class="main_img">
+          <img class="active" src="assets/images/image-product-1.jpg" alt="product-image">
+          <img src="assets/images/image-product-2.jpg" alt="product-image">
+          <img src="assets/images/image-product-3.jpg" alt="product-image">
+          <img src="assets/images/image-product-4.jpg" alt="product-image">
+        </div>
+        <div class="preview_img">
+          <div class="active">
+            <img src="assets/images/image-product-1-thumbnail.jpg">
+          </div>
+          <div>
+            <img src="assets/images/image-product-2-thumbnail.jpg">
+          </div>
+          <div>
+            <img src="assets/images/image-product-3-thumbnail.jpg">
+          </div>
+          <div>
+            <img src="assets/images/image-product-4-thumbnail.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="lightbox">
+        <div class="gallery">
+          <div class="lightbox_close">
+            <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg>
+          </div>
+          <div class="main_img">
+            <img class="active" src="assets/images/image-product-1.jpg" alt="product-image">
+            <img src="assets/images/image-product-2.jpg" alt="product-image">
+            <img src="assets/images/image-product-3.jpg" alt="product-image">
+            <img src="assets/images/image-product-4.jpg" alt="product-image">
+          </div>
+          <button class="prev product_btn">
+            <img src="assets/images/icon-previous.svg" alt="previous">
+          </button>
+          <button class="next product_btn">
+            <img src="assets/images/icon-next.svg" alt="next">
+          </button>
+          <div class="preview_img">
+            <div class="active">
+              <img src="assets/images/image-product-1-thumbnail.jpg">
+            </div>
+            <div>
+              <img src="assets/images/image-product-2-thumbnail.jpg">
+            </div>
+            <div>
+              <img src="assets/images/image-product-3-thumbnail.jpg">
+            </div>
+            <div>
+              <img src="assets/images/image-product-4-thumbnail.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+
+    <section class="product_container">
+      <div class="product_info">
+        <p class="company">Sneaker Company</p>
+        <h1 class="product_name">Fall Limited Edition Sneakers</h1>
+        <p class="description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+      </div>
+      <div class="prices">
+        <div class="new_price">
+          $125.00
+            <span class="discount">50%</span>
+          </span>
+        </div>
+        <p class="old_price">$250.00</p>
+      </div>
+      <div class="buttons">
+        <div class="add_minus_btn">
+          <button class="minus">
+            <img src="assets/images/icon-minus.svg" alt="minus">
+          </button>
+          <p class="btn_text">0</p>
+          <button class="plus">
+            <img src="assets/images/icon-plus.svg" alt="plus">
+          </button>
+        </div>
+        <button class="add_cart_btn">
+          <img src="assets/images/icon-cart.svg" alt="cart">
+          Add to cart
+        </button>
+      </div>
+    </section>
+  </main>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
